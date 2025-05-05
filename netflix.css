@@ -110,6 +110,7 @@ nav button {
     font-size: 20px;
     border-radius: 4px;
     font-weight: 400;
+    margin-bottom: 26px;
 }
 
 .btn-red-sm {
@@ -133,6 +134,7 @@ nav button {
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
+    margin-bottom: 26px;
 }
 
 .first {
@@ -143,18 +145,24 @@ nav button {
     color: white;
     align-items: center;
     gap: 20px;
+    padding: 20px;
 }
+
+
 
 .secImage {
     position: relative;
 }
 
 .secImage img {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
-    width: 20vw;
-    height: 20vw;
-    object-fit: contain;
-    z-index: 10;
 }
 
 .second {
@@ -218,6 +226,12 @@ nav button {
     color: white;
 }
 
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
 section.first>div :nth-child(2) {
     font-size: 24px;
 }
@@ -231,6 +245,8 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
+
+
 
 .footer-items {
     display: flex;
@@ -262,3 +278,42 @@ footer a {
     font-weight: 400;
 }
 
+@media screen and (max-width: 375px) {
+    .first {
+        flex-wrap: wrap;
+    }
+    .secImage img {
+        width: 305px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    
+    }
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 375px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 29px;
+    }
+    .faq h2{
+        font-size: 32px;
+    }
+    footer {
+        max-width: 90vw;
+    }
+    
+}

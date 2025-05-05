@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     background-color: black;
     
@@ -95,13 +96,21 @@ nav button {
 
 .btn{
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.342);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.btn-red{
+.btn-red {
     background-color: red;
     color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
 }
 
 .btn-red-sm{
@@ -110,3 +119,94 @@ nav button {
     
 }
 
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    gap: 20px;
+}
+
+.secImage {
+    position: relative;
+}
+.secImage img{
+    padding: 20px;
+    width: 20vw;
+    height: 20vw;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.fourth {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer {
+    margin-left: 183px;
+    margin-top: 40px;
+    font-weight: 800;
+}
+
+.faq {
+    color: white;
+    margin-left: 183px;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 10px solid rgba(12, 15, 12, 0.5);
+    padding: 20px;
+}
+
+.faq:hover {
+    background-color: rgba(12, 15, 12, 0.5);
+    cursor: pointer;
+}
